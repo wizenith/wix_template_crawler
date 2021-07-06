@@ -77,10 +77,16 @@ func main() {
 			}
 			defer file.Close()
 
+			// Save file as a image
+			// Method I:
+			// file.ReadFrom(res.Body)
+
+			// Method II:
 			_, err = io.Copy(file, res.Body)
 			if err != nil {
 				log.Fatal(err)
 			}
+
 			fmt.Println("Success!")
 		}
 
