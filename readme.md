@@ -8,6 +8,6 @@
 
 ### HowTo
 
-`git clone wizenith/wix_template_crawler`
+`git clone github.com/wizenith/wix_template_crawler`
 
 `Go run main.go`
